@@ -1,1 +1,1 @@
-# desi-etsy-platform
+# EasyService
