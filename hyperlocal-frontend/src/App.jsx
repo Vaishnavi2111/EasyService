@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import api from "./api";
+import API from "./services/api"; // ✅ Corrected path
 
 function App() {
   useEffect(() => {
-    api.get("/services")
+    API.get("/services")
       .then((res) => {
         console.log("Services:", res.data);
       })
@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div>
-      <h1>Welcome to EasyService</h1>
+      <h1>Hyperlocal Frontend</h1>
     </div>
   );
 }
