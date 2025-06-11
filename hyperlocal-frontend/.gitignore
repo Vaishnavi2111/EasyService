@@ -36,3 +36,6 @@ dist-ssr
 # System files
 Thumbs.db
 ehthumbs.db
+
+# Mock Server File
+db.json
