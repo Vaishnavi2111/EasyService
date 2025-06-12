@@ -1,27 +1,25 @@
-import React from "react";
+// src/components/Navbar.jsx
+import React from 'react';
 
-const Navbar = () => {
-  return (
-    <nav className="flex justify-between items-center px-6 py-4 shadow-md">
-      {/* Logo */}
-      <div className="text-2xl font-bold text-primary">
-        EasyService
-      </div>
-
-      {/* Navigation Links */}
-      <ul className="flex gap-6 text-base font-medium">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">How It Works</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-
-      {/* CTA Button */}
-      <button className="bg-primary text-white px-4 py-2 rounded-xl hover:bg-primary-dark transition">
-        Login
+const Navbar = () => (
+  <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+    <div className="container">
+      <a className="navbar-brand fw-bold text-primary" href="#">EasyService</a>
+      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+        <span className="navbar-toggler-icon"></span>
       </button>
-    </nav>
-  );
-};
+
+      <div className="collapse navbar-collapse" id="navContent">
+        <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li className="nav-item"><a className="nav-link" href="#">Home</a></li>
+          <li className="nav-item"><a className="nav-link" href="#">Services</a></li>
+          <li className="nav-item"><a className="nav-link" href="#">About</a></li>
+          <li className="nav-item"><a className="nav-link" href="#">Contact</a></li>
+        </ul>
+        <button className="btn btn-outline-primary ms-lg-3">Login</button>
+      </div>
+    </div>
+  </nav>
+);
 
 export default Navbar;

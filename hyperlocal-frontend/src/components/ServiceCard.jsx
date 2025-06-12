@@ -1,14 +1,14 @@
 // src/components/ServiceCard.jsx
-import React from "react";
+import React from 'react';
 
-const ServiceCard = ({ title, icon, description }) => {
-  return (
-    <div className="bg-white rounded-2xl shadow-md p-6 text-center hover:shadow-lg transition-all">
-      <img src={icon} alt={title} className="w-16 h-16 mx-auto mb-4" />
-      <h3 className="text-lg font-semibold mb-2">{title}</h3>
-      <p className="text-sm text-gray-600">{description}</p>
+const ServiceCard = ({ title, icon, description }) => (
+  <div className="card h-100 text-center border-0 shadow-sm">
+    <div className="card-body">
+      <img src={icon} alt={title} className="mb-3" style={{ width: '60px', height: '60px' }} />
+      <h5 className="card-title">{title}</h5>
+      <p className="card-text text-muted">{description}</p>
     </div>
-  );
-};
+  </div>
+);
 
 export default ServiceCard;
