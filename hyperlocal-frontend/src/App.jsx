@@ -1,22 +1,8 @@
-import React, { useEffect } from "react";
-import API from "./services/api"; // ✅ Corrected path
+import React from "react";
+import Home from "./pages/Home";
 
 function App() {
-  useEffect(() => {
-    API.get("/services")
-      .then((res) => {
-        console.log("Services:", res.data);
-      })
-      .catch((err) => {
-        console.error("API Error:", err);
-      });
-  }, []);
-
-  return (
-    <div>
-      <h1>Hyperlocal Frontend</h1>
-    </div>
-  );
+  return <Home />;
 }
 
 export default App;
