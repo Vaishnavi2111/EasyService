@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom'; // add this import at the top
 import './Home.css';
 import img1 from '../assets/appliance.jpg';
 import img2 from '../assets/beauty3.jpg';
@@ -33,11 +34,12 @@ function Home() {
           <span className="brand-name">EasyService</span>
         </div>
         <div className="navbar-right">
-          <a href="#">Home</a>
-          <a href="#">Services</a>
-          <a href="#">About</a>
-          <a href="#">Contact Us</a>
-          <a href="#">Sign in</a>
+          <Link to="/">Home</Link>
+          <Link to="/services">Services</Link>
+          <Link to="/about">About</Link>
+          <Link to="/contact">Contact Us</Link>
+          <Link to="#">Sign in</Link> 
+
         </div>
       </nav>
 
