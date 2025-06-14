@@ -1,0 +1,136 @@
+/* Page wrapper */
+.home-wrapper {
+  background-color: white;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.home-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  border-bottom: 1px solid #ccc;
+  background-color: white;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo-box {
+  padding: 8px;
+  border: 1px solid #080505;
+  margin-right: 10px;
+}
+
+.brand-name {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 18px;
+  color: #000;
+}
+
+.navbar-right a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #a11f1f;
+  font-size: 14px;
+}
+
+/* Hero section*/
+.hero-section {
+  padding: 160px 380px;
+  max-width: 11100px;
+  background-color: white;
+}
+
+/* Slideshow background */
+.hero-slideshow {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: 1;
+}
+
+.hero-slide.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+/* Optional dark overlay */
+.hero-slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(76, 192, 14, 0.242);
+}
+
+/* Content centered over slideshow */
+.hero-content {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  max-width: 700px;
+  padding: 20px;
+}
+
+
+
+.hero-title {
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 1px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-subtitle {
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 20px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.hero-description {
+  font-size: 15px;
+  color:#B33791;
+  max-width: 1000px;
+  line-height: 1.6;
+}
+
+.hero-button {
+  background-color: #7cd100;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 24px;
+  margin-top: 24px;
+  cursor: pointer;
+}
