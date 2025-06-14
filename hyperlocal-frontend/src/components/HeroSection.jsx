@@ -20,16 +20,16 @@ import React, { useEffect, useState } from 'react';
 import './Home.css';
 
 const backgroundImages = [
-  '/appliance.jpg',
-  '/beauty3.jpg',
-  '/body.jpg',
-  '/carpenter.jpg',
-  '/electric.jpg',
-  '/facial.jpg',
-  '/hair.jpg',
-  '/makeup.jpg',
-  '/nailart.jpg',
-  '/plumbing.jpg'
+  '/appliance.png',
+  '/beauty3.png',
+  '/body.png',
+  '/carpenter.png',
+  '/electric.png',
+  '/facial.png',
+  '/hair.png',
+  '/makeup.png',
+  '/nailart.png',
+  '/plumbing.png'
 ];
 
 const HeroSection = () => {

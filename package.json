@@ -1,5 +1,9 @@
 {
   "dependencies": {
+<<<<<<< HEAD
     "react-router-dom": "^7.6.2"
+=======
+    "bootstrap": "^5.3.6"
+>>>>>>> df91cd9fc23c8dcbe2744cee99e1996a5f729533
   }
 }

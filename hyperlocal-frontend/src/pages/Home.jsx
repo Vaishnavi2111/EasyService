@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'; // add this import at the top
 import './Home.css';
-import img1 from '../assets/appliance.jpg';
-import img2 from '../assets/beauty3.jpg';
-import img3 from '../assets/body.jpg';
-import img4 from '../assets/carpenter.jpg';
-import img5 from '../assets/electric.jpg';
-import img6 from '../assets/facial.jpg';
-import img7 from '../assets/hair.jpg';
-import img8 from '../assets/makeup.jpg';
-import img9 from '../assets/nailart.jpg';
-import img10 from '../assets/plumbing.jpg';
-import img11 from '../assets/item.jpg';
+import img1 from '../assets/appliance.png';
+import img2 from '../assets/beauty3.png';
+import img3 from '../assets/body.png';
+import img4 from '../assets/carpenter.png';
+import img5 from '../assets/electric.png';
+import img6 from '../assets/facial.png';
+import img7 from '../assets/hair.png';
+import img8 from '../assets/makeup.png';
+import img9 from '../assets/nailart.png';
+import img10 from '../assets/plumbing.png';
+import img11 from '../assets/item.png';
 
 const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11];
 
