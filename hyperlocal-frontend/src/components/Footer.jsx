@@ -1,11 +1,12 @@
 // src/components/Footer.jsx
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Footer = () => {
   return (
-    <footer className="mt-auto footer">
+    <footer className="footer">
       <div className="container">
         <div className="row">
           {/* About Us */}
@@ -19,10 +20,10 @@ const Footer = () => {
           {/* Quick Links */}
           <div className="col-md-4 mb-3">
             <h5>Quick Links</h5>
-            <ul className="list-unstyled">
-              <li><a href="#" className="text-decoration-none">Home</a></li>
-              <li><a href="#" className="text-decoration-none">Services</a></li>
-              <li><a href="#" className="text-decoration-none">Contact</a></li>
+            <ul className="list-unstyled footer-links">
+              <li><Link to="/" className="footer-link">Home</Link></li>
+              <li><Link to="/services" className="footer-link">Services</Link></li>
+              <li><Link to="/contact" className="footer-link">Contact</Link></li>
             </ul>
           </div>
 
