@@ -1,72 +1,47 @@
-// src/components/HeroSection.jsx
-/*import React from 'react';
+import React, { useState, useEffect } from 'react';
+import './HeroSection.css'; // optional for separate styles
+
+import img1 from '../assets/appliance.png';
+import img2 from '../assets/beauty3.png';
+import img3 from '../assets/body.png';
+import img4 from '../assets/carpenter.png';
+import img5 from '../assets/electric.png';
+import img6 from '../assets/facial.png';
+import img7 from '../assets/hair.png';
+import img8 from '../assets/makeup.png';
+import img9 from '../assets/nailart.png';
+import img10 from '../assets/plumbing.png';
+import img11 from '../assets/item.png';
+
+const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11];
 
 const HeroSection = () => {
-  return (
-    <div className="py-5 bg-light text-center">
-      <div className="container">
-        <h1 className="display-4 text-primary">Welcome to EasyService</h1>
-        <p className="lead text-secondary">
-          This is the Hero Sections
-        </p>
-      </div>
-    </div>
-  );
-};
-
-export default HeroSection;*/
-
-import React, { useEffect, useState } from 'react';
-import './Home.css';
-
-const backgroundImages = [
-  '/appliance.png',
-  '/beauty3.png',
-  '/body.png',
-  '/carpenter.png',
-  '/electric.png',
-  '/facial.png',
-  '/hair.png',
-  '/makeup.png',
-  '/nailart.png',
-  '/plumbing.png'
-];
-
-const HeroSection = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % backgroundImages.length);
-    }, 4000);
+      setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="hero-slideshow">
-      {backgroundImages.map((img, index) => (
-        <div
-          key={index}
-          className={`hero-slide ${index === currentIndex ? 'active' : ''}`}
-          style={{ backgroundImage: `url(${img})` }}
-        />
-      ))}
-
-      <div className="hero-content">
-        <h2 className="hero-title">
-          Connecting you with Trusted professionals, right when you need them.
-        </h2>
-        <h3 className="hero-subtitle">
-          From beauty service to home repairs, find and book reliable experts.
-        </h3>
-        <p className="hero-description">
-          Explore verified service providers, check ratings and reviews, and book appointments easily.
-        </p>
-        <button className="hero-button">GET STARTED</button>
-      </div>
-    </div>
+    <section
+      className="hero-section"
+      style={{ backgroundImage: `url(${images[currentImage]})` }}
+    >
+      <h2 className="hero-title">
+        Connecting you with Trusted professionals, right when you need them.
+      </h2>
+      <h3 className="hero-subtitle">
+        From beauty service to home repairs, find and book reliable experts in your area with just a few click.
+      </h3>
+      <p className="hero-description">
+        Whether you're looking for a quick fix or a schedule service, our platform helps you explore verified service providers, check ratings and reviews, and book appointments with ease. With real-time updates, flexible bookings, and secure payments, getting professional help has never been more convenient.
+      </p>
+      <button className="hero-button">GET STARTED</button>
+    </section>
   );
 };
 
 export default HeroSection;
-

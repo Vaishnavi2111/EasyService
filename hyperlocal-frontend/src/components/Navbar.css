@@ -1,0 +1,34 @@
+/* Navbar */
+.home-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 32px;
+  background-color: #E8F9FF;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo-box {
+  padding: 8px;
+  border: 1px solid #080505;
+  margin-right: 10px;
+}
+
+.brand-name {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 18px;
+  color: #000;
+}
+
+.navbar-right a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #0118D8;
+  font-size: 16px;
+  font-weight: bold;
+}

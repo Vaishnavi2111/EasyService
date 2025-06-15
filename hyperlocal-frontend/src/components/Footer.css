@@ -1,0 +1,14 @@
+footer {
+  background-color: #E8F9FF;  /* Custom light blue background */
+  color: #000;                /* Dark text for contrast */
+  padding: 3rem 0;
+}
+
+footer a {
+  color: #000;                /* Ensure links are dark too */
+}
+
+.social-icons a {
+  font-size: 1.25rem;
+  margin-right: 10px;
+}
