@@ -1,4 +1,8 @@
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
@@ -6,28 +10,27 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import SignIn from "./pages/SignIn";
 
-
 function App() {
   return (
     <BrowserRouter>
-      <Routes>      
-       {/* All pages using Layout */}
+      <Routes>
+        {/* Pages that share the main layout */}
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact/>} />          
+          <Route path="/contact" element={<Contact />} />
         </Route>
 
-        {/* ✅ Add this route separately for Sign In */}
+        {/* Page that does not use the main layout */}
         <Route path="/signin" element={<SignIn />} />
-
       </Routes>
     </BrowserRouter>
   );
 }
 
 export default App;
+
 
 
 

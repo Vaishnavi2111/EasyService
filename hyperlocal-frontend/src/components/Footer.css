@@ -1,14 +1,42 @@
 footer {
-  background-color: #E8F9FF;  /* Custom light blue background */
-  color: #000;                /* Dark text for contrast */
-  padding: 3rem 0;
+  background-color: #E8F9FF;
+  color: #0B1D51;
+  padding: 2rem 0 0.5rem 0; /* Reduced bottom padding */
+  margin: 0;
 }
 
-footer a {
-  color: #000;                /* Ensure links are dark too */
+footer hr {
+  margin: 0.1rem 0; /* Less space around the line */
+  border-color: #0b1d81; /* Optional: lighter line */
+}
+
+footer p {
+  margin: 0; /* Remove all default spacing */
+  padding-bottom: 0.5rem; /* Optional: slight breathing room from bottom */
+  font-size: 0.9rem;
+  color: #211C84;
 }
 
 .social-icons a {
   font-size: 1.25rem;
   margin-right: 10px;
+}
+
+.footer-links {
+  padding-left: 0;
+  margin: 0;
+}
+
+.footer-link {
+  display: inline-block;
+  font-size: 0.9rem;          /* Smaller font size */
+  color: #4300FF;             /* Dark blue link color */
+  text-decoration: none;
+  margin-bottom: 0.4rem;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #0077b6;             /* Light blue on hover */
+  text-decoration: underline; /* Optional underline on hover */
 }
