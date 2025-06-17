@@ -66,7 +66,7 @@
 
 .overlay {
   background: #ff416c;
-  background: linear-gradient(to right, #ff4b2b, #ff416c);
+  background: linear-gradient(to right, #7319da, #ff41f6);
   color: white;
   position: relative;
   left: -100%;
@@ -144,7 +144,7 @@
   /*align-self: flex-start;*/ /* optional: align to left */
   border-radius: 20px;
   border: 1px solid #6a1b9a;
-  background-color: #ff4b2b;
+  background-color: #0118D8;
   color: #fff;
   font-size: 14px;
   padding: 12px 45px;
@@ -162,7 +162,7 @@
 .sign-up-btn {
   border-radius: 20px;
   border: 1px solid #6a1b9a;
-  background-color: #ff4b2b;
+  background-color: #0118D8;
   color: #fff;
   font-size: 14px;
   padding: 12px 45px;
