@@ -56,7 +56,7 @@
 }
 
 .hero-title {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bolder;
   margin-bottom: 1px;
   max-width: 900px;
@@ -65,7 +65,7 @@
 }
 
 .hero-subtitle {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
   margin-bottom: 20px;
   max-width: 900px;
@@ -74,7 +74,7 @@
 }
 
 .hero-description {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: bold;
   color: #1E201E;
   max-width: 1000px;

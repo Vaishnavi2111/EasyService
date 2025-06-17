@@ -32,3 +32,10 @@
   font-size: 16px;
   font-weight: bold;
 }
+
+.logo-image {
+  height: 42px;
+  width: auto;
+  margin-right: 10px;
+}
+
