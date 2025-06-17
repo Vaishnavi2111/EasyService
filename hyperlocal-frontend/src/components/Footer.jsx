@@ -1,4 +1,4 @@
-
+// src/components/Footer.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
@@ -9,6 +9,14 @@ const Footer = () => {
     <footer className="footer">
       <div className="container">
         <div className="row">
+          {/* About Us */}
+          <div className="col-md-4 mb-3">
+            <h5>About Us</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante mollis quam tristique convallis.
+            </p>
+          </div>
+
           {/* Quick Links */}
           <div className="col-md-4 mb-3">
             <h5>Quick Links</h5>
@@ -19,15 +27,29 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Info */}
+          {/* Follow Us */}
           <div className="col-md-4 mb-3">
-            <h5>Contact Us</h5>
-            <p>Email: support@easyservice.com</p>
-            <p>Phone: +91 12345 67890</p>
+            <h5>Follow Us</h5>
+            <ul className="list-inline social-icons">
+              <li className="list-inline-item">
+                <a href="#"><i className="bi bi-facebook"></i></a>
+              </li>
+              <li className="list-inline-item">
+                <a href="#"><i className="bi bi-twitter"></i></a>
+              </li>
+              <li className="list-inline-item">
+                <a href="#"><i className="bi bi-instagram"></i></a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div className="text-center py-3">
-          &copy; {new Date().getFullYear()} EasyService. All rights reserved.
+
+        <hr className="mb-4" />
+
+        <div className="row">
+          <div className="col-md-12 text-center">
+            <p>&copy; 2023 Your Company. All rights reserved.</p>
+          </div>
         </div>
       </div>
     </footer>
@@ -35,4 +57,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
