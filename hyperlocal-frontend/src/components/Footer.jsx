@@ -7,13 +7,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="container">
+      <div className="container-fluid px-5">
         <div className="row">
           {/* About Us */}
           <div className="col-md-4 mb-3">
             <h5>About Us</h5>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante mollis quam tristique convallis.
+              EasyService connects you with trusted local pros—fast, easy, and hassle-free.
             </p>
           </div>
 
@@ -48,7 +48,7 @@ const Footer = () => {
 
         <div className="row">
           <div className="col-md-12 text-center">
-            <p>&copy; 2023 Your Company. All rights reserved.</p>
+            <p>&copy; 2025 Easy Service. All rights reserved.</p>
           </div>
         </div>
       </div>

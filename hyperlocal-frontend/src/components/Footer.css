@@ -1,8 +1,13 @@
 footer {
-  background-color: #E8F9FF;
+  width: 100%;
+  background-color: #6FE6FC;
   color: #0B1D51;
-  padding: 2rem 0 0.5rem 0; /* Reduced bottom padding */
+  padding: 2rem 0 0.5rem 0;
   margin: 0;
+  box-shadow: none;        /* Ensure no card-like shadow */
+  border-radius: 0;        /* Remove roundness */
+  position: relative;
+  border-top: 1px solid #ccc;
 }
 
 footer hr {
@@ -13,7 +18,7 @@ footer hr {
 footer p {
   margin: 0; /* Remove all default spacing */
   padding-bottom: 0.5rem; /* Optional: slight breathing room from bottom */
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #211C84;
 }
 

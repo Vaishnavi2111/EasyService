@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "../components/Auth.css";
+import './SignIn.css';;
 
 const SignIn = () => {
     useEffect(() => {
@@ -48,7 +48,7 @@ const SignIn = () => {
   }, []);*/
 
   return (
-    <div>
+    <div className="signin-wrapper">
       <div className="container" id="container">
         <div className="form-container sign-up-container">
           <form action="#">

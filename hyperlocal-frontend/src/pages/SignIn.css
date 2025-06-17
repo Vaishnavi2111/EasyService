@@ -1,3 +1,13 @@
+/* Wrapper to center SignIn on full screen */
+.signin-wrapper {
+  height: 100vh; /* Full viewport height */
+  width: 100vw;  /* Full viewport width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E8F9FF; /* Optional: soft background */
+}
+
 /* Base container styles */
 .container {
   background: #fff;
@@ -9,7 +19,6 @@
   width: 768px;
   max-width: 100%;
   min-height: 500px;
-  margin: 50px auto;
   display: flex;
 }
 
