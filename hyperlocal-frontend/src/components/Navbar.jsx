@@ -11,7 +11,7 @@ const Navbar = () => {
         <span className="brand-name"></span>
       </div>
       <div className="navbar-right">
-        <a href="#">Home</a>
+        <a href="/">Home</a>
         <a href="/#services">Services</a>
         <Link to="/about">About</Link>
         <Link to="/contact">Contact Us</Link>

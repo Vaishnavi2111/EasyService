@@ -9,6 +9,7 @@
   margin: 0;
   box-sizing: border-box;
   overflow: hidden;
+  padding-top: 100px;  /* Add space from the top */
 }
 
 /* Contact form box */
@@ -17,7 +18,7 @@
   padding: 40px;
   border: 2px solid #183B4E;
   border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   max-width: 600px;
   width: 100%;
 }
