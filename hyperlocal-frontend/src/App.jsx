@@ -3,9 +3,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import ScrollToTop from "./components/ScrollToTop";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
-import Services from "./pages/Services";
+{/*import Services from "./pages/Services";*/}
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import SignIn from "./pages/SignIn";
@@ -13,11 +14,12 @@ import SignIn from "./pages/SignIn";
 function App() {
   return (
     <BrowserRouter>
+    <ScrollToTop /> 
       <Routes>
         {/* Pages that share the main layout */}
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/services" element={<Services />} />
+          {/*<Route path="/services" element={<Services />} />*/}
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Route>

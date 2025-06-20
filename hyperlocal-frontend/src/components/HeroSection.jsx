@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './HeroSection.css'; // optional for separate styles
+import './HeroSection.css';
 
 import img1 from '../assets/appliance.png';
 import img2 from '../assets/beauty3.png';
@@ -34,14 +34,18 @@ const HeroSection = () => {
         Connecting you with Trusted professionals, right when you need them.
       </h2>
       <h3 className="hero-subtitle">
-        From beauty service to home repairs, find and book reliable experts in your area with just a few click.
+        From beauty service to home repairs, find and book reliable experts in your area with just a few clicks.
       </h3>
       <p className="hero-description">
-        Whether you're looking for a quick fix or a schedule service, our platform helps you explore verified service providers, check ratings and reviews, and book appointments with ease. With real-time updates, flexible bookings, and secure payments, getting professional help has never been more convenient.
+        Whether you're looking for a quick fix or a scheduled service, our platform helps you explore verified service providers, check ratings and reviews, and book appointments with ease. With real-time updates, flexible bookings, and secure payments, getting professional help has never been more convenient.
       </p>
-      <button className="hero-button">GET STARTED</button>
+
+      <a href="#services" style={{ textDecoration: "none" }}>
+        <button className="hero-button">GET STARTED</button>
+      </a>
     </section>
   );
 };
 
 export default HeroSection;
+

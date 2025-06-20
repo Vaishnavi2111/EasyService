@@ -1,8 +1,8 @@
 footer {
   width: 100%;
-  background-color: #6FE6FC;
+  background-color: #dbe8eb;
   color: #0B1D51;
-  padding: 2rem 0 0.5rem 0;
+  padding: 2rem 0 0.5rem 0;  
   margin: 0;
   box-shadow: none;        /* Ensure no card-like shadow */
   border-radius: 0;        /* Remove roundness */
