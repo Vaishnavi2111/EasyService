@@ -3,7 +3,7 @@
 .about-section {
   width: 100vw;
   min-height: 100vh;
-  padding: 4rem 1rem;
+  padding: 6rem 1rem 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;

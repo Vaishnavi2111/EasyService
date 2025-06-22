@@ -106,3 +106,11 @@
   cursor: pointer;
 }
 
+.hero-button:hover {
+  background-color: #0B1D51; /* ← Change to any color you like */
+  color: #ffffff;            /* Optional: keep text white */
+  transform: scale(1.05);    /* Optional: subtle hover effect */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
