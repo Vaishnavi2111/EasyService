@@ -40,6 +40,13 @@
   color: #000;
 }
 
+.navbar-right {
+  position: relative; /* Fix for dropdown */
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
 .navbar-right a {
   margin-left: 30px;
   text-decoration: none;
@@ -53,4 +60,48 @@
   width: auto;
   margin-right: 10px;
 }
+
+/* User initials dropdown styling */
+.user-initials-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.user-initials {
+  background-color: #007bff;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 50%;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.user-initials:hover {
+  background-color: #0056b3;
+}
+
+/*[.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1001;
+}
+
+.dropdown-menu button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  font-weight: bold;
+  font-size: 14px;
+}
+]*/
+
 
