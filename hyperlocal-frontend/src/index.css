@@ -75,4 +75,10 @@ button:focus-visible {
   }
 }
 
+main {
+  position: relative;
+  overflow: visible !important;
+  z-index: 1;
+}
+
 

@@ -4,11 +4,13 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import authRoutes from './routes/authRoutes.js';
 import protectedRoutes from './routes/protectedRoutes.js';
+import contactRoutes from './routes/contactRoutes.js';
 
 
 dotenv.config();
 
 const app = express();
+const PORT = 5000;
 
 app.use(cors({
   origin: 'http://localhost:5173',
@@ -17,6 +19,8 @@ app.use(cors({
 app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api/test', protectedRoutes);
+app.use('/api', contactRoutes);
+app.use(express.json());
 
 app.get('/', (req, res) => {
   res.send('API is running...');

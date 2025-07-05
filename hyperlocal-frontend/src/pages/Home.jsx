@@ -22,6 +22,7 @@ import electric from '../assets/electri.png';
 import beauty from '../assets/treatment.png';
 import carpenter from '../assets/featured.png';
 import appliance from '../assets/repair.png';
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
   const services = [
@@ -51,6 +52,7 @@ function Home() {
       description: 'AC, fridge, microwave,  and more – quick fixes.', 
     },
   ];
+  const navigate = useNavigate();
 
   return (
     <div className="home-wrapper">
@@ -64,7 +66,12 @@ function Home() {
               <img src={item.image} alt={item.title} className="service-image" />
               <h3 className="service-title">{item.title}</h3>
               <p className="service-description">{item.description}</p>
-              <button className="service-button">MORE</button>
+              <button 
+              className="service-button"
+              onClick={() => navigate('/service-detail', { state: { service: item } })}
+              >
+              MORE
+            </button>
             </div>
           ))}
         </div>
